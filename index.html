@@ -1,18 +1,34 @@
-<html>
-    <head>
-        <title>Face App</title>
-        <style>
-        #overlay, .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            }
-        </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face App</title>
+  <style>
+        body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+    </style>
     </head>
     <body>
-        <img src="images/friendsreunion.jpg" id="originalImg" width="1400" height="800" />
+        <img src="images/02-woman.jpeg" id="originalImg" width="1400" height="800" />
         <canvas id="reflay" class="overlay"></canvas>
 
+
+        <!-- given cordenates of mouth, draw something -->
+
+        
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/face-api.js"></script>
         <script src="js/faceSystem.js"></script>
