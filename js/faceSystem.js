@@ -86,17 +86,17 @@ $(document).ready(function(){
         //     })
         // );
 
-        const threshold = 0.6
-        const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, threshold)
+        // const threshold = 0.6
+        // const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, threshold)
 
-        const results = faceDescriptions.map(fd => faceMatcher.findBestMatch(fd.descriptor))
+        // const results = faceDescriptions.map(fd => faceMatcher.findBestMatch(fd.descriptor))
 
-        results.forEach((bestMatch, i) => {
-            const box = faceDescriptions[i].detection.box
-            const text = bestMatch.toString()
-            const drawBox = new faceapi.draw.DrawBox(box, { label: text })
-            drawBox.draw(canvas)
-        })
+        // results.forEach((bestMatch, i) => {
+        //     const box = faceDescriptions[i].detection.box
+        //     const text = bestMatch.toString()
+        //     const drawBox = new faceapi.draw.DrawBox(box, { label: text })
+        //     drawBox.draw(canvas)
+        // })
 
     }
     
