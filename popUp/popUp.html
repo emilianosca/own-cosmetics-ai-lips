@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="/css/globalStyles.css">
+
+        <!-- libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+        <title>Responsive Modal Popup</title>
+    </head>
+    <body>
+        <section class="modal container">
+
+
+            <button class="modal__button" id="open-modal">
+                Sube tu foto aquí
+            </button>
+
+            <div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
+                        <i class="bx bx-x"></i>
+                    </div>
+
+                    <!-- <img src="assets/img/star-trophy.png" alt="" class="modal__img"> -->
+
+                    <h1 class="modal__title">Good Job!</h1>
+
+                    <img src="/images/01-man.jpeg" id="originalImg" width="400" height="auto" />
+                    <canvas id="reflay" class="overlay"></canvas>    
+                  
+                    <p class="modal__description">Click the button to close</p>
+
+
+                    <div class="colorPicker">
+                        <div id="picker">
+                            
+                        </div>
+                    </div>
+
+                    <button class="modal__button modal__button-width">
+                        View status
+                    </button>
+
+                    <button class="modal__button-link close-modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+           
+
+        </section>
+
+        <!-- import modules -->
+        <script type="module" src="/js/jsModules/importModules.js"></script>
+
+        <!--=============== pop up ===============-->
+        <script src="popUp.js"></script>
+
+        <!-- AI face detection -->
+        <script src="/js/jquery-2.1.1.min.js"></script>
+        <script src="/js/face-api.js"></script>
+        <script type="module" src="/js/faceSystem.js"></script>
+        
+        <!-- Color picker -->
+ 
+        <script type="module" src="./iroColorPicer/colorPicker.js"></script>
+    </body>
+</html>

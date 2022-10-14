@@ -5,29 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Face App</title>
-  <style>
-        body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  <link rel="stylesheet" href="/css/globalStyles.css">
+</head>
 
-    canvas {
-      position: absolute;
-    }
-    </style>
-    </head>
-    <body>
-        <img src="images/01-man.jpeg" id="originalImg" width="1400" height="800" />
-        <canvas id="reflay" class="overlay"></canvas>        
-        <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/face-api.js"></script>
-        <script src="js/faceSystem.js"></script>
-    </body>
+<header>
+    <h1>Face App</h1>
+</header>
+
+  <body>
+    <img src="images/01-man.jpeg" id="originalImg" width="400" height="auto" />
+      <canvas id="reflay" class="overlay"></canvas>    
+    
+    <!-- Scripts -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/face-api.js"></script>
+    <script src="js/faceSystem.js"></script>
+    
+  </body>
 </html>
 
 

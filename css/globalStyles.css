@@ -1,0 +1,25 @@
+header {
+
+    padding: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    height: 20vh; 
+    position: absolute;
+    margin-bottom: 40%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+canvas {
+    position: absolute;
+    margin-left: -21em;
+}
